@@ -11,7 +11,7 @@ RSpec.describe 'Post controllers', type: :request do
     end
 
     it 'the response includes right text' do
-      expect(response.body).to include('The list of posts')
+      expect(response.body).to include('Index page from posts')
     end
 
     it 'the right response status' do
@@ -28,7 +28,7 @@ RSpec.describe 'Post controllers', type: :request do
     end
 
     it 'the response includes right text' do
-      expect(response.body).to include('The list of post for given specific users\' post id')
+      expect(response.body).to include('show page from posts')
     end
 
     it 'the correct response status' do
