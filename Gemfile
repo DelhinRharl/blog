@@ -22,12 +22,13 @@ gem 'importmap-rails'
 gem 'turbo-rails'
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem 'rspec-rails', '~> 4.0.0'
-gem 'stimulus-rails'
-
 gem 'bootsnap', require: false
+gem 'ffi', '~> 1.15', '>= 1.15.5'
 gem 'jbuilder'
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'rails-controller-testing'
+gem 'rspec-rails'
+gem 'stimulus-rails'
+gem 'tzinfo-data'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
