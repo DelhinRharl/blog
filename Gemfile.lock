@@ -249,7 +249,7 @@ DEPENDENCIES
   ffi (~> 1.15, >= 1.15.5)
   importmap-rails
   jbuilder
-  pg (~> 1.1)
+  pg
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.3)
   rails-controller-testing
