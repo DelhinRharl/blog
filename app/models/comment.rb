@@ -3,6 +3,6 @@ class Comment < ApplicationRecord
   belongs_to :post
 
   def comments_count
-    post.increment!(:Commets_counter)
+    post.increment!(:Comments_counter)
   end
 end
