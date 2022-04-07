@@ -9,5 +9,4 @@ class PostsController < ApplicationController
     @user = @post.author
     @comments = @post.comments
   end
-  
 end
