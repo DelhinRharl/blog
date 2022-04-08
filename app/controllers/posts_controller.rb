@@ -14,10 +14,6 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
-  def new
-    @post = Post.new
-  end
-
   def create
     @new_post = current_user.posts.new(post_params)
     respond_to do |f|
