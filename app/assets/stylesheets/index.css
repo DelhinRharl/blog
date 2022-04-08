@@ -1,7 +1,8 @@
-  body {
+body {
   background-color: rgb(214, 213, 213);
-  }
-  .user-a{
+}
+
+.user-a {
   background-color: rgb(214, 213, 213);
   border-radius: 5px;
   display: flex;
@@ -9,8 +10,9 @@
   align-content: center;
   padding-left: 10%;
   gap: 20%;
-  }
-  .user_cont {
+}
+
+.user_cont {
   display: flex;
   background-color: #fff;
   border-radius: 5px;
@@ -21,42 +23,43 @@
   align-content: center;
   padding: 5px;
   gap: 20%;
-  }
+}
 
-  img {
+img {
   width: 120px;
   height: 120px;
-  }
+}
 
-  .username {
+.username {
   font-size: 40px;
   font-weight: lighter;
   color: rgb(22, 0, 216);
   text-decoration: none;
-  }
+}
 
-  .user-show-a {
+.user-show-a {
   display: flex;
   flex-direction: column;
   align-content: center;
   padding: 5px;
   gap: 20%;
-  }
+}
 
-  .img-c {
+.img-c {
   display: flex;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   height: 10.25rem;
   margin-bottom: 20px;
   padding: 20px;
-  }
-  .tom-post {
+}
+
+.tom-post {
   display: flex;
   gap: 20%;
-  }
+}
 
-  .bio {
+.bio {
   display: flex;
   flex-direction: column;
   background-color: rgb(254, 240, 240);
@@ -64,8 +67,9 @@
   height: 10.25rem;
   margin-bottom: 20px;
   padding: 20px;
-  }
-  .recent-p {
+}
+
+.recent-p {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -73,9 +77,9 @@
   height: max-content;
   margin-bottom: 20px;
   padding: 20px;
-  }
+}
 
-  .all-p {
+.all-p {
   background-color: #4bb8d3; /* Green */
   border: none;
   border-radius: 10px;
@@ -89,15 +93,15 @@
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  }
+}
 
-  .button1 {
+.button1 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
 
-  .buttons {
+.buttons {
   display: flex;
   background: transparent;
   border: none;
   gap: 20%;
-  }
+}
