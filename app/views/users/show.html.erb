@@ -1,19 +1,20 @@
 
-<div>
-<div >
+<div class="user-show-a">
+<div class="img-c">
 <img src=<%= @user.photo %> alt="user photo"/>
-<div>
+<div class="tom-post">
 <h2><%= @user.name %></h2>
 <p>Number of posts: <%= @user.posts_counter%></p>
 </div>
 </div>
-
+<div class="bio">
 <p><%= @user.bio %></p>
+</div>
 
 
 <% @user.recent_posts.each do |post| %>
-  <%= link_to user_post_path(@user.id, post.id), class:"text-dec" do %> 
-  <div>
+  <%= link_to user_posts_path(@user.id, post.id) do %> 
+  <div class="recent-p">
   <h2> Post : <%= post.title %></h2>
   <p><%= post.text %></p>
   <h3>Comments: <%= post.comments_counter%>, Likes: <%= post.likes_counter%><h3>
@@ -21,7 +22,12 @@
   <% end %>
   <% end%>
 
+  <div class="buttons">
+
   <button>
-      <%= link_to "All posts", user_posts_path(@user) %>
+      <%= link_to "All posts", user_posts_path(@user.id), class:"all-p" %>
   </button>
+
+  </div>
+
 </div>

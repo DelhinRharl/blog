@@ -1,17 +1,23 @@
 <div>
 
+  <div class="recent-p">
   <div>
-  <div>
-  <h2>Post : <%= @post.title %> by <%= @user.name %></h2>
-  <h3>Comments: <%= @post.comments_counter%>, Likes: <%= @post.likes_counter %><h3>
+  <h3>Post : <%= @post.title %> by <%= @user.name %></h3>
+  <h4>Comments: <%= @post.comments_counter%>, Likes: <%= @post.likes_counter %><h4>
   </div>
   <p><%= @post.text %></p>
   </div>
 
+    <%= form_with url: "/users/#{@post.author_id}/posts/#{@post.id}/likes", scope: :like do |form| %>
+    <%= form.submit "Like ",class:"all-p" %>
+    <% end %>
+
   <div>
   <% @comments.each do |comment|%>
-    <h3><%= comment.text %></h3>
+    <p><%= comment.text %></p>
     <% end %>
   </div>
-
+  
+  <%= render partial: "comments", local: { post: @post } %>
+  
 </div>
