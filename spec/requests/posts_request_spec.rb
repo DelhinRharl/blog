@@ -11,7 +11,7 @@ RSpec.describe 'Post controllers', type: :request do
     end
 
     it 'the response includes right text' do
-      expect(response.body).to include('Index page from posts')
+      expect(response.body).to include('Likes')
     end
 
     it 'the right response status' do
@@ -28,7 +28,25 @@ RSpec.describe 'Post controllers', type: :request do
     end
 
     it 'the response includes right text' do
-      expect(response.body).to include('show page from posts')
+      expect(response.body).to include('Likes')
+    end
+
+    it 'the correct response status' do
+      expect(response.status).to eq(200)
+    end
+  end
+
+  describe 'GET /show' do
+    before :each do
+      get '/users/1/posts/new'
+    end
+
+    it 'renders the right template' do
+      expect(response).to render_template(:new)
+    end
+
+    it 'the response includes right text' do
+      expect(response.body).to include('Create')
     end
 
     it 'the correct response status' do

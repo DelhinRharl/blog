@@ -8,7 +8,7 @@ class LikesController < ApplicationController
     if like.save
       redirect_to "/users/#{@post.author_id}/posts/#{@post.id}", notice: 'Liked!'
     else
-      redirect_to "/users/#{@post.author_id}/posts/#{@post.id}", alert: 'Error! No like added!'
+      redirect_to "/users/#{@post.author_id}/posts/#{@post.id}", alert: 'Could not like!'
     end
   end
 end
