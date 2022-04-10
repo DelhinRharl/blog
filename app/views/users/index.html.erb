@@ -1,16 +1,16 @@
-<div>
-
+<div class="user-a">
 <% @users.each do |user| %>
-<%= link_to user_path(user.id) do %>
- <img src="<%=user.photo %>">
+<%= link_to user_path(user.id), class:"text-a" do %>
+
+<div class="user_cont">
+ <img class="img" src="<%=user.photo %>">
 <div>
-<h3> <%= user.name %> </h3>
+<h3 class="username"> <%= user.name %> </h3>
 </div>
 <div>
-<p> Number of posts <%= user.posts_counter %></p>
+<p > Number of posts <%= user.posts_counter %></p>
  </div>
+</div>
  <%end%>
  <%end%>
 </div>
-
-

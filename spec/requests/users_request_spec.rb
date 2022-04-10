@@ -11,7 +11,7 @@ RSpec.describe 'Users controller', type: :request do
     end
 
     it 'the response includes right text' do
-      expect(response.body).to include('Index page from users')
+      expect(response.body).to include('Number')
     end
 
     it 'the correct response status' do
@@ -28,7 +28,7 @@ RSpec.describe 'Users controller', type: :request do
     end
 
     it 'the response includes right text' do
-      expect(response.body).to include('show page from users')
+      expect(response.body).to include('Likes')
     end
 
     it 'the correct status' do
