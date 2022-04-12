@@ -23,13 +23,13 @@ gem 'turbo-rails'
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'bootsnap', require: false
+gem 'devise'
 gem 'ffi', '~> 1.15', '>= 1.15.5'
 gem 'jbuilder'
 gem 'rails-controller-testing'
 gem 'rspec-rails'
 gem 'stimulus-rails'
-gem 'tzinfo-data' 
-gem 'devise'
+gem 'tzinfo-data'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -54,4 +54,4 @@ group :test do
   gem 'webdrivers'
 end
 
-gem "tailwindcss-rails", "~> 2.0"
+gem 'tailwindcss-rails', '~> 2.0'
