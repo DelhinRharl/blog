@@ -28,8 +28,8 @@ gem 'jbuilder'
 gem 'rails-controller-testing'
 gem 'rspec-rails'
 gem 'stimulus-rails'
-gem 'tzinfo-data'
-gem 'webpacker'
+gem 'tzinfo-data' 
+gem 'devise'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -53,3 +53,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+gem "tailwindcss-rails", "~> 2.0"

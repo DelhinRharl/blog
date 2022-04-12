@@ -2,6 +2,11 @@
 <% @users.each do |user| %>
 <%= link_to user_path(user.id), class:"text-a" do %>
 
+<% if @user%>
+Logged in as <%= @user.name %>
+<% end %>
+
+
 <div class="user_cont">
  <img class="img" src="<%=user.photo %>">
 <div>

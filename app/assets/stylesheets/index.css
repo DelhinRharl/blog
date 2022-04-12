@@ -37,6 +37,10 @@ img {
   text-decoration: none;
 }
 
+.username h2 {
+  text-decoration: none;
+}
+
 .user-show-a {
   display: flex;
   flex-direction: column;
