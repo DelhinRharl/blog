@@ -1,21 +1,35 @@
 body {
-  background-color: rgb(214, 213, 213);
+ background-color:bisque;
+}
+
+.nav {
+  background-color:black;
+  box-shadow: 5px 5px  10px coral;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.nav h4 {
+  color: #fff;
 }
 
 .user-a {
-  background-color: rgb(214, 213, 213);
-  border-radius: 5px;
+  background-color: bisque;
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding-left: 10%;
+  padding-left: 1%;
   gap: 20%;
+  margin-top: 80px;
 }
 
 .user_cont {
   display: flex;
-  background-color: #fff;
-  border-radius: 5px;
+  background-color: rgb(255, 235, 211);
+  box-shadow: 5px 5px  5px coral;
+  border-radius: 10px;
   margin-bottom: 20px;
   height: 10.25rem;
   width: 80%;
@@ -31,14 +45,12 @@ img {
 }
 
 .username {
-  font-size: 40px;
-  font-weight: lighter;
-  color: rgb(22, 0, 216);
+  font-size: 25px;
+  font-weight: normal ;
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
-}
-
-.username h2 {
-  text-decoration: none;
+  
 }
 
 .user-show-a {
@@ -49,9 +61,31 @@ img {
   gap: 20%;
 }
 
+.posts {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 1rem;
+  font-family: fantasy;
+  font-style: italic;
+  align-items: center;
+  align-content: center;
+  gap: 0;
+  padding: 0;
+  
+}
+ 
+.pc {
+   color: rgb(201, 2, 2);
+   font-size: 1.5rem;
+   text-decoration: none;
+   font-family: fantasy;
+}
+
 .img-c {
   display: flex;
-  background-color: rgb(255, 255, 255);
+  background-color:  rgb(255, 235, 211);
+  box-shadow: 5px 5px  10px coral;
   border-radius: 5px;
   height: 10.25rem;
   margin-bottom: 20px;
@@ -66,17 +100,19 @@ img {
 .bio {
   display: flex;
   flex-direction: column;
-  background-color: rgb(254, 240, 240);
+  background-color:  rgb(255, 235, 211);
   border-radius: 5px;
   height: 10.25rem;
   margin-bottom: 20px;
   padding: 20px;
+  box-shadow: 5px 5px  10px coral;
 }
 
 .recent-p {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color:  rgb(255, 235, 211);
+  box-shadow: 5px 5px  10px coral;
   border-radius: 5px;
   height: max-content;
   margin-bottom: 20px;
@@ -84,7 +120,7 @@ img {
 }
 
 .all-p {
-  background-color: #4bb8d3; /* Green */
+  background-color:  rgb(211, 115, 18); 
   border: none;
   border-radius: 10px;
   color: white;
@@ -95,12 +131,8 @@ img {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
-}
-
-.button1 {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttons {

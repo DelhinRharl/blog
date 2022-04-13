@@ -2,8 +2,8 @@
 
   <div class="recent-p">
   <div>
-  <h3>Post : <%= @post.title %> by <%= @user.name %></h3>
-  <h4>Comments: <%= @post.comments_counter%>, Likes: <%= @post.likes_counter %><h4>
+  <h3><%= @post.title %> by <%= @user.name %></h3>
+  <h4>comments(<%= @post.comments_counter%>) likes(<%= @post.likes_counter %>)<h4>
   </div>
   <p><%= @post.text %></p>
   </div>
@@ -15,6 +15,8 @@
   <div>
   <% @comments.each do |comment|%>
     <p><%= comment.text %></p>
+
+
     <% end %>
   </div>
   
