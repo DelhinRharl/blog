@@ -110,7 +110,7 @@ img {
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 235, 211);
-  box-shadow: 5px 5px  10px coral;
+  box-shadow: 5px 5px  10px rgb(253, 128, 82);
   border-radius: 5px;
   height: max-content;
   margin-bottom: 20px;
