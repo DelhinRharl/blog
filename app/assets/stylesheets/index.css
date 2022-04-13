@@ -72,7 +72,7 @@ img {
   gap: 0;
   padding: 0;
 }
- 
+
 .pc {
   color: rgb(201, 2, 2);
   font-size: 1.5rem;
@@ -82,8 +82,8 @@ img {
 
 .img-c {
   display: flex;
-  background-color:  rgb(255, 235, 211);
-  box-shadow:  5px 5px  10px coral;
+  background-color: rgb(255, 235, 211);
+  box-shadow: 5px 5px  10px coral;
   border-radius: 5px;
   height: 10.25rem;
   margin-bottom: 20px;
@@ -98,9 +98,9 @@ img {
 .bio {
   display: flex;
   flex-direction: column;
-  background-color:  rgb(255, 235, 211);
+  background-color: rgb(255, 235, 211);
   border-radius: 5px;
-  height:  10.25rem;
+  height: 10.25rem;
   margin-bottom: 20px;
   padding: 20px;
   box-shadow: 5px 5px  10px coral;
@@ -109,18 +109,18 @@ img {
 .recent-p {
   display: flex;
   flex-direction: column;
-  background-color:  rgb(255, 235, 211);
+  background-color: rgb(255, 235, 211);
   box-shadow: 5px 5px  10px coral;
-  border-radius:  5px;
+  border-radius: 5px;
   height: max-content;
   margin-bottom: 20px;
   padding: 20px;
 }
 
 .all-p {
-  background-color:  rgb(211, 115, 18); 
+  background-color: rgb(211, 115, 18);
   border: none;
-  border-radius:  10px;
+  border-radius: 10px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -129,7 +129,7 @@ img {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; 
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
