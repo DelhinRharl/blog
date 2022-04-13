@@ -15,9 +15,10 @@
   <div>
   <% @comments.each do |comment|%>
     <p><%= comment.text %></p>
-
-
-    <% end %>
+    <% if can? :destroy, comment %>
+      <%= button_to 'Delete Comment', user_post_comment_path(@post.author_id, @post.id, comment.id), method: :delete, params: { comment_id: comment.id}%>
+    <%end%>
+  <% end %>
   </div>
   
   <%= render partial: "comments", local: { post: @post } %>
