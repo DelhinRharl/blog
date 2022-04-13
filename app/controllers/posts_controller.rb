@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:comments, :likes)
@@ -28,7 +27,7 @@ class PostsController < ApplicationController
     end
   end
 
-   def destroy
+  def destroy
     @post = Post.find(params[:id])
     user = User.find(params[:user_id])
     user.posts_counter -= 1

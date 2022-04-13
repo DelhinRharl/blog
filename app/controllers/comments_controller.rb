@@ -28,8 +28,6 @@ class CommentsController < ApplicationController
     redirect_to user_post_path(post.author_id, post.id)
   end
 
-
-
   private
 
   def comment_params
