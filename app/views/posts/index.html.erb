@@ -14,8 +14,12 @@
   <div>
   <h2>Post : <%= post.title %></h2>
   <p><%= post.text %></p>
+
   <h3>Comments: <%= post.comments_counter%> Likes: <%= post.likes_counter %><h3>
   </div>
+  <% if can? :destroy, post %>
+        <%= button_to "Delete Post", user_post_path(@user.id, post.id), :method => :delete %>
+      <%end%>
   <% end %>
 
   <div>

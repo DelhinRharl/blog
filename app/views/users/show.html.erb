@@ -4,7 +4,7 @@
 <img src=<%= @user.photo %> alt="user photo"/>
 <div class="tom-post">
 <h2><%= @user.name %></h2>
-<p>Number of posts: <%= @user.posts_counter%></p>
+<p>Number of posts(<%= @user.posts_counter%>)</p>
 </div>
 </div>
 <div class="bio">
@@ -15,7 +15,7 @@
 <% @user.recent_posts.each do |post| %>
   <%= link_to user_posts_path(@user.id, post.id) do %> 
   <div class="recent-p">
-  <h2> Post : <%= post.title %></h2>
+  <h2><%= post.title %></h2>
   <p><%= post.text %></p>
   <h3>Comments: <%= post.comments_counter%>, Likes: <%= post.likes_counter%><h3>
   </div>
