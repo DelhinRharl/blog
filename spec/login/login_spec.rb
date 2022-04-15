@@ -6,12 +6,12 @@ RSpec.feature 'Logins', type: :feature do
     expect(page).to have_field('user[email]')
   end
 
-  scenario 'displays password field and has log in field' do
+  scenario 'displays password and log-in field' do
     expect(page).to have_field('user[password]')
     expect(page).to have_button('Log in')
   end
 
-  scenario 'Submit form with incorrect email and password' do
+  scenario 'Submitting form with the incorrect email and password' do
     visit new_user_session_path
     fill_in 'Email', with: 'add@gmail.com'
     fill_in 'Password', with: ''
@@ -19,8 +19,8 @@ RSpec.feature 'Logins', type: :feature do
     expect(page).to have_content 'Invalid Email or password.'
   end
 
-  scenario 'Submit form with correct email and password' do
-    @user = User.create(name: 'Sam', email: 'sam@gmail.com', password: 'password')
+  scenario 'Submitting form with  the correct email and password' do
+    @user = User.create(name: 'Affaxed', email: 'aff@gmail.com', password: '123456')
     visit new_user_session_path
     fill_in 'Email', with: @user.email
     fill_in 'Password', with: @user.password
@@ -28,8 +28,8 @@ RSpec.feature 'Logins', type: :feature do
     expect(page).to have_content 'Signed in successfully.'
   end
 
-  context 'Form Submission' do
-    scenario 'Submit an empty form' do
+  context 'Submitting form' do
+    scenario 'when submitting an empty form' do
       click_button 'Log in'
       expect(page).to have_content 'Invalid Email or password.'
     end
