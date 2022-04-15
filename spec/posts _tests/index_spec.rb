@@ -13,13 +13,13 @@ RSpec.describe 'post_index_route', type: :feature do
 
       @post = Post.create(title: 'First Post', text: 'This is the first post', comments_counter: 0, likes_counter: 0,
                           author: first_user)
-      posta = Post.create(title: 'Second Post', text: 'This is the second post', comments_counter: 0, likes_counter: 0,
-                          author: first_user)
-      postb = Post.create(title: 'Third Post', text: 'This is the third post', comments_counter: 0, likes_counter: 0,
-                          author: first_user)
-      commenta = Comment.create(text: 'The link is here', author: User.first, post: Post.first)
-      commentb = Comment.create(text: 'What is this', author: User.first, post: Post.first)
-      commentc = Comment.create(text: 'Bond be bond', author: User.first, post: Post.first)
+      @posta = Post.create(title: 'Second Post', text: 'This is the second post', comments_counter: 0, likes_counter: 0,
+                           author: first_user)
+      @postb = Post.create(title: 'Third Post', text: 'This is the third post', comments_counter: 0, likes_counter: 0,
+                           author: first_user)
+      @commenta = Comment.create(text: 'The link is here', author: User.first, post: Post.first)
+      @commentb = Comment.create(text: 'What is this', author: User.first, post: Post.first)
+      @commentc = Comment.create(text: 'Bond be bond', author: User.first, post: Post.first)
 
       visit(user_posts_path(first_user.id))
     end

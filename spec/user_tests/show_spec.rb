@@ -5,19 +5,19 @@ RSpec.describe 'user_show_path', type: :feature do
     before(:each) do
       @first_user = User.create(name: 'Affaxed', photo: 'link', bio: 'bio', posts_counter: 0,
                                 email: 'dev@gmail', password: '123456', password_confirmation: '123456')
-      second_user = User.create(name: 'Bad', photo: 'link', bio: 'bio', posts_counter: 0,
-                                email: 'devi@gmail', password: '123456', password_confirmation: '123456')
-      third_user = User.create(name: 'Bade', photo: 'link', bio: 'bio', posts_counter: 0,
-                               email: 'devii@gmail', password: '123456', password_confirmation: '123456')
+      @second_user = User.create(name: 'Bad', photo: 'link', bio: 'bio', posts_counter: 0,
+                                 email: 'devi@gmail', password: '123456', password_confirmation: '123456')
+      @third_user = User.create(name: 'Bade', photo: 'link', bio: 'bio', posts_counter: 0,
+                                email: 'devii@gmail', password: '123456', password_confirmation: '123456')
 
       visit root_path
       fill_in 'Email', with: 'dev@gmail'
       fill_in 'Password', with: '123456'
       click_button 'Log in'
 
-      first_post = Post.create(author: @first_user, title: 'Finding Dora', text: 'This is my first post')
-      second_post = Post.create(author: @first_user, title: 'Finding Dora', text: 'This is my second post')
-      third_post = Post.create(author: @first_user, title: 'Finding Dora', text: 'This is my third post')
+      @first_post = Post.create(author: @first_user, title: 'Finding Dora', text: 'This is my first post')
+      @second_post = Post.create(author: @first_user, title: 'Finding Dora', text: 'This is my second post')
+      @third_post = Post.create(author: @first_user, title: 'Finding Dora', text: 'This is my third post')
 
       visit user_path(@first_user.id)
     end

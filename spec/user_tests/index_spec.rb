@@ -3,12 +3,12 @@ require 'rails_helper'
 RSpec.describe 'user_index_path', type: :feature do
   describe 'User index page' do
     before(:each) do
-      first_user = User.create(name: 'Affaxed', photo: 'link', bio: 'bio', posts_counter: 0,
-                               email: 'fh@gmail.com', password: '123456', password_confirmation: '123456')
-      second_user = User.create(name: 'Ba', photo: 'link', bio: 'bio', posts_counter: 0,
-                                email: 'ads@gmail.com', password: '123456', password_confirmation: '123456')
-      third_user = User.create(name: 'Bb', photo: 'link', bio: 'bio', posts_counter: 0,
-                               email: 'sfbh@gmail.com', password: '123456', password_confirmation: '123456')
+      @first_user = User.create(name: 'Affaxed', photo: 'link', bio: 'bio', posts_counter: 0,
+                                email: 'fh@gmail.com', password: '123456', password_confirmation: '123456')
+      @second_user = User.create(name: 'Ba', photo: 'link', bio: 'bio', posts_counter: 0,
+                                 email: 'ads@gmail.com', password: '123456', password_confirmation: '123456')
+      @third_user = User.create(name: 'Bb', photo: 'link', bio: 'bio', posts_counter: 0,
+                                email: 'sfbh@gmail.com', password: '123456', password_confirmation: '123456')
 
       visit root_path
       fill_in 'Email', with: 'fh@gmail.com'
