@@ -12,6 +12,7 @@ module Api
           end
         end
       end
+
       def create
         if request.headers['X-AUTH-TOKEN']
           @user = User.find_by_api_token(request.headers['X-AUTH-TOKEN'])
