@@ -16,6 +16,7 @@ module Api
           end
         end
       end
+
       def register
         new_user = User.new(name: params[:name], email: params[:email], password: params[:password])
         if new_user.save
