@@ -17,8 +17,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: i4mcloud
-  password: i4mCloud
+  username: postgres
+  password: Rharl@2016
   host: localhost
 
   # For details on connection pooling, see Rails configuration guide
@@ -27,7 +27,7 @@ default: &default
 
 development:
   <<: *default
-  database: blog_development
+  database: blog_app
 
 
   # The specified database role being used to connect to postgres.
@@ -62,7 +62,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: blog_test
+  database: blog_app
 
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -87,5 +87,5 @@ test:
 #
 production:
   <<: *default
-  database: blog_production
+  database: blog_app
 
