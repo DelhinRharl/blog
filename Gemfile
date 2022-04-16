@@ -24,6 +24,7 @@ gem 'turbo-rails'
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'bootsnap', require: false
 gem 'cancancan'
+gem 'database_cleaner'
 gem 'devise'
 gem 'ffi', '~> 1.15', '>= 1.15.5'
 gem 'jbuilder'
